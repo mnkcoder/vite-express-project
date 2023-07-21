@@ -1,14 +1,12 @@
-import "./index.css";
+import "./common.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import App from "./App";
-
-console.log("Hello from client/main.tsx");
+console.log("Hello from client/home.tsx");
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <h1>Im home</h1>
   </React.StrictMode>
 );
