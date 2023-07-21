@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/companies", (req, res) => {
+  res.render("companies");
+});
+
 app.get("/hello", (_, res) => {
   res.send("Hello Vite + React + TypeScript!");
 });
