@@ -6,8 +6,8 @@ const app = express();
 
 console.log(__dirname);
 
-app.engine("handlebars", engine());
-app.set("view engine", "handlebars");
+app.engine(".html", engine({ extname: ".html" }));
+app.set("view engine", ".html");
 app.set("views", `${__dirname}/views`);
 
 app.get("/", (req, res) => {
