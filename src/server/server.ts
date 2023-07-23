@@ -20,7 +20,6 @@ app.engine(
 
 if (process.env.NODE_ENV === "production") {
   app.set("views", `./build/src/server/views`);
-
   app.use(express.static("build/assets"));
 } else {
   app.set("views", `${__dirname}/views`);

@@ -17,8 +17,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         layout: resolve(root, "server/views/layouts/main-layout.html"),
-        scripts: resolve(root, "server/views/partials/scripts.html"),
-        styles: resolve(root, "server/views/partials/styles.html"),
+        scripts: resolve(root, "server/views/partials/commonScripts.html"),
+        styles: resolve(root, "server/views/partials/commonStyles.html"),
         home: resolve(root, "server/views/home.html"),
         "company-detail-app": resolve(root, "server/views/companies.html"),
       },

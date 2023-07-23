@@ -9,6 +9,7 @@
     <div class="container">
       <div class="row"><h1>Welcome from Layout!!!</h1></div>
     </div>
-    {{{body}}} {{> commonScripts}}
+    {{{body}}} {{#if isDevelopment}} {{> devOnlyScripts}} {{/if}} {{>
+    commonScripts}}
   </body>
 </html>
