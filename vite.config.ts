@@ -20,6 +20,7 @@ export default defineConfig({
         scripts: resolve(root, "server/views/partials/commonScripts.html"),
         styles: resolve(root, "server/views/partials/commonStyles.html"),
         home: resolve(root, "server/views/home.html"),
+
         dummyHome: resolve(root, "index.html"), // this is just a dummy file to make vite happy
       },
     },
